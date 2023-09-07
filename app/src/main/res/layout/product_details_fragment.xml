@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:padding="16dp">
+
+<ImageView
+    android:id="@+id/imgProduct"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_width="130dp"
+    android:layout_height="160dp"
+    android:contentDescription="@string/product_images" />
+
+<TextView
+    android:id="@+id/txtProductName"
+    android:textSize="18sp"
+    android:layout_marginTop="16dp"
+    android:textColor="@color/black"
+    app:layout_constraintTop_toBottomOf="@id/imgProduct"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<TextView
+    android:id="@+id/txtProductDescription"
+    android:layout_marginTop="10dp"
+    android:textSize="18sp"
+    android:textColor="@color/black"
+    app:layout_constraintTop_toBottomOf="@id/txtProductName"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<TextView
+    android:id="@+id/txtProductPrice"
+    android:textSize="18sp"
+    android:layout_marginTop="10dp"
+    android:textColor="@color/black"
+    app:layout_constraintTop_toBottomOf="@id/txtProductDescription"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+<TextView
+    android:id="@+id/txtProductDiscountPercentage"
+    android:textSize="18sp"
+    android:layout_marginTop="10dp"
+    android:textColor="@color/black"
+    app:layout_constraintTop_toBottomOf="@id/txtProductPrice"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<TextView
+    android:id="@+id/txtProductRating"
+    android:textSize="18sp"
+    android:layout_marginTop="10dp"
+    android:textColor="@color/black"
+    app:layout_constraintTop_toBottomOf="@id/txtProductDiscountPercentage"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<TextView
+    android:id="@+id/txtProductStock"
+    android:textSize="18sp"
+    android:layout_marginTop="10dp"
+    android:textColor="@color/black"
+    app:layout_constraintTop_toBottomOf="@id/txtProductRating"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<TextView
+    android:id="@+id/txtProductBrand"
+    android:textSize="18sp"
+    android:layout_marginTop="10dp"
+    android:textColor="@color/black"
+    app:layout_constraintTop_toBottomOf="@id/txtProductStock"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<TextView
+    android:id="@+id/txtProductCategory"
+    android:textSize="18sp"
+    android:layout_marginTop="10dp"
+    android:textColor="@color/black"
+    app:layout_constraintTop_toBottomOf="@id/txtProductBrand"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<TextView
+    android:id="@+id/txtProductThumbnail"
+    android:textSize="18sp"
+    android:textColor="@color/black"
+    android:layout_marginTop="10dp"
+    app:layout_constraintTop_toBottomOf="@id/txtProductCategory"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
